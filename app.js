@@ -1455,8 +1455,8 @@
 // }
 
 // // task 3
-// function delEntry() {
-//     document.getElementsByTagName("tr")[1].remove();
+// function delEntry(e) {
+//     e.parentNode.parentNode.remove();
 // }
 
 // // task 4
