@@ -1504,12 +1504,17 @@
 //     document.getElementById('paragraph').innerHTML = paragraph;
 // }
 
-// // // task 3
-// function delEntry() {
-//     document.getElementsByTagName("tr")[1].remove();
+// // task 3
+// function delEntry(e) {
+//     e.parentNode.parentNode.remove();
 // }
-// function editEntry() {
-//     document.getElementsByTagName("tr");
+// function editEntry(e) {
+//     var preValue = e.parentNode.parentNode.childNodes[3].firstChild.nodeValue;
+//     var preValue2 = e.parentNode.parentNode.childNodes[5].firstChild.nodeValue;
+//     var editValue = prompt("Please edit Name", preValue);
+//     var editValue2 = prompt("Please edit Class", preValue2);
+//     e.parentNode.parentNode.childNodes[3].firstChild.nodeValue = editValue;
+//     e.parentNode.parentNode.childNodes[5].firstChild.nodeValue = editValue2;
 // }
 
 //                                             // Chapters 53 to 58
